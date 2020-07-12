@@ -1,3 +1,23 @@
+# auction-service-notifier
+
+Currently contains a Lambda function that sends emails from an SQS queue via SES for our [auction-service](https://github.com/AndrewCathcart/auction-service).
+
+## Installation
+
+Prerequisites
+
+- [Node](https://nodejs.org/en/) is required. This can be installed via the website or by using [nvm](https://github.com/nvm-sh/nvm) (see their documentation).
+- [AWS CLI Version 2](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html)
+- Serverless Framework `$ npm install -g serverless`
+
+Then install dependencies
+
+`$ npm install`
+
+Deploy to development in AWS
+
+`$ sls deploy -v`
+
 ## SQS Notes
 
 - Can help send messages between microservices using a queue, decoupling them.
